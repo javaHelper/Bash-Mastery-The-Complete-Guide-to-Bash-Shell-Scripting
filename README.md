@@ -217,7 +217,7 @@ root@4da6e0a48600:/Prateek#
 root@4da6e0a48600:/Prateek# mkdir word_splitting    
 root@4da6e0a48600:/Prateek# cd word_splitting
 root@4da6e0a48600:/Prateek/word_splitting# numbers="1 2 3 4 5"
-root@4da6e0a48600:/Prateek/word_splitting# touch $numbers
+ touch $numbers
 root@4da6e0a48600:/Prateek/word_splitting# ls
 1  2  3  4  5
 root@4da6e0a48600:/Prateek/word_splitting# rm {1..5}
@@ -263,6 +263,7 @@ total 0
 -rw-r--r-- 1 root root 0 Nov 26 06:14 file2.txt
 -rw-r--r-- 1 root root 0 Nov 26 06:14 file3.txt
 root@4da6e0a48600:/Prateek/word_splitting# touch file{a..c}.txt
+touch fileabc.txt
 root@4da6e0a48600:/Prateek/word_splitting# ls -l
 total 0
 -rw-r--r-- 1 root root 0 Nov 26 06:14 file.txt
@@ -278,4 +279,24 @@ root@4da6e0a48600:/Prateek/word_splitting# touch report{1..3}.pdf
 root@4da6e0a48600:/Prateek/word_splitting# ls
 file.txt  file1.txt  file123.txt  file2.txt  file3.txt  filea.txt  fileb.txt  filec.txt  report1.pdf  report2.pdf  report3.pdf
 root@4da6e0a48600:/Prateek/word_splitting# 
+```
+
+- Read Everthing 
+
+```
+root@4da6e0a48600:/Prateek/word_splitting# ls *
+file.txt  file1.txt  file123.txt  file2.txt  file3.txt  filea.txt  fileb.txt  filec.txt  report1.pdf  report2.pdf  report3.pdf
+
+
+ls *.txt
+file.txt  file1.txt  file123.txt  file2.txt  file3.txt  filea.txt  fileb.txt  filec.txt
+
+ls *.pdf
+report1.pdf  report2.pdf  report3.pdf
+
+ls file*.txt
+file.txt  file1.txt  file123.txt  file2.txt  file3.txt  filea.txt  fileb.txt  filec.txt
+
+ls file?.txt
+file1.txt  file2.txt  file3.txt  filea.txt  fileb.txt  filec.txt
 ```
