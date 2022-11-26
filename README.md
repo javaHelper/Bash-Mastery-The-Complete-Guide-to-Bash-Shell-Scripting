@@ -141,3 +141,20 @@ Therefore, I will save the backup in /Prateek
 root@4da6e0a48600:/Prateek# 
 
 ```
+
+- Arithmatic Expression
+
+```sh
+root@4da6e0a48600:/Prateek# ./arithmatic_script.sh 
+6
+9
+-1
+0
+20
+14
+20
+16
+0
+2
+root@4da6e0a48600:/Prateek# 
+```
