@@ -427,3 +427,12 @@ chmod +x spcial4.sh
 
 ```
 
+```
+root@4da6e0a48600:/Prateek# vi calculator2.sh
+root@4da6e0a48600:/Prateek# chmod +x calculator2.sh 
+root@4da6e0a48600:/Prateek# ./calculator2.sh 1+2+3
+6
+root@4da6e0a48600:/Prateek# ./calculator2.sh 1*2*3*4
+24
+```
+
