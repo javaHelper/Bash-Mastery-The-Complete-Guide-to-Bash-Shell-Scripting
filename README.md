@@ -445,3 +445,12 @@ root@4da6e0a48600:/Prateek# echo $REPLY
 hello
 root@4da6e0a48600:/Prateek# 
 ```
+
+```sh
+read input1 input2
+hello goodbye
+root@4da6e0a48600:/Prateek# echo $input1
+hello
+root@4da6e0a48600:/Prateek# echo $input2
+goodbye
+```
