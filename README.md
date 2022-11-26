@@ -124,3 +124,12 @@ root@4da6e0a48600:/# echo ${numbers: -3}
 789
 root@4da6e0a48600:/# 
 ```
+
+- command substitution
+
+```sh
+./substitution_script.sh 
+HELLO , the right time now is 05:11:41
+26-11-2022_05-43-41
+
+```
