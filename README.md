@@ -389,3 +389,11 @@ chmod 744 special.sh
 
 ```
 
+```sh
+./special2.sh 1 2 3
+-rw-r--r-- 1 root root     0 Nov 26 07:10 3
+-rw-r--r-- 1 root root     0 Nov 26 07:10 2
+-rw-r--r-- 1 root root     0 Nov 26 07:10 1
+-rwxr-xr-x 1 root root    21 Nov 26 07:11 special2.sh
+
+```
