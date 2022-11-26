@@ -407,3 +407,15 @@ drwxr-xr-x 1 root root 4096 Nov 22 07:03 ..
 -rw-r--r-- 1 root root    0 Nov 26 07:15 report
 -rwxr-xr-x 1 root root   22 Nov 26 07:14 special2.sh
 ```
+
+```sh
+./special3.sh "daily feedback" "monthly report"
+
+ls -la
+total 12
+drwxr-xr-x 2 root root 4096 Nov 26 07:22  .
+drwxr-xr-x 1 root root 4096 Nov 22 07:03  ..
+-rw-r--r-- 1 root root    0 Nov 26 07:22 'daily feedback'
+-rw-r--r-- 1 root root    0 Nov 26 07:22 'monthly report'
+-rwxr-xr-x 1 root root   24 Nov 26 07:22  special3.sh
+```
