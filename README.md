@@ -461,4 +461,12 @@ Prateek 33 London
 My name is Prateek
 I am 33
 I am from London
+
+
+root@4da6e0a48600:/Prateek# vi read2.sh
+root@4da6e0a48600:/Prateek# chmod 744 read2.sh 
+root@4da6e0a48600:/Prateek# ./read2.sh 
+Input your first name : Jane
+Input your age : 30
+Input the town you are from: Chicago
 ```
