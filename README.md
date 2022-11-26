@@ -646,3 +646,30 @@ root@4da6e0a48600:/Prateek# numbers[0]=b
 root@4da6e0a48600:/Prateek# echo ${numbers[@]}
 b 2 4 5
 ```
+
+
+```
+root@4da6e0a48600:/Prateek# vi days.txt
+root@4da6e0a48600:/Prateek# cat days.txt 
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+
+root@4da6e0a48600:/Prateek# readarray days < days.txt
+root@4da6e0a48600:/Prateek# echo ${days[@]}
+Monday Tuesday Wednesday Thursday Friday Saturday Sunday
+
+root@4da6e0a48600:/Prateek# echo ${!days[@]}
+0 1 2 3 4 5 6 7
+root@4da6e0a48600:/Prateek# echo ${days[@]@Q}
+$'Monday\n' $'Tuesday\n' $'Wednesday\n' $'Thursday\n' $'Friday\n' $'Saturday\n' $'Sunday\n' $'\n'
+
+root@4da6e0a48600:/Prateek# readarray -t days < days.txt
+root@4da6e0a48600:/Prateek# echo ${days[@]@Q}
+'Monday' 'Tuesday' 'Wednesday' 'Thursday' 'Friday' 'Saturday' 'Sunday' ''
+
+```
