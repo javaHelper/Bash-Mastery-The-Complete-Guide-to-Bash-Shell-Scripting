@@ -618,3 +618,31 @@ root@4da6e0a48600:/Prateek#
 Tokyo is in Japan
 
 ```
+
+- working with indexed value
+
+```sh
+root@4da6e0a48600:/Prateek# numbers=(1 2 3 4)
+root@4da6e0a48600:/Prateek# echo $numbers
+1
+root@4da6e0a48600:/Prateek# echo ${numbers[2]}
+3
+root@4da6e0a48600:/Prateek# echo ${numbers[@]}
+1 2 3 4
+root@4da6e0a48600:/Prateek# echo ${numbers[@]:1}
+2 3 4
+root@4da6e0a48600:/Prateek# echo ${numbers[@]:1:2}
+2 3
+root@4da6e0a48600:/Prateek# numbers+=(5)
+root@4da6e0a48600:/Prateek# echo ${numbers[@]}
+1 2 3 4 5
+root@4da6e0a48600:/Prateek# unset numbers[2]
+root@4da6e0a48600:/Prateek# echo ${numbers[@]}
+1 2 4 5
+root@4da6e0a48600:/Prateek# echo ${!numbers[@]}
+0 1 3 4
+
+root@4da6e0a48600:/Prateek# numbers[0]=b
+root@4da6e0a48600:/Prateek# echo ${numbers[@]}
+b 2 4 5
+```
