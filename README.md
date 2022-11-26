@@ -500,3 +500,23 @@ chmod +x select.sh
 # The day of the week is wed
 ```
 
+```sh
+./extensions2.sh 
+What is your first name?: Prateek
+What is your surname/family name?: Dekate
+1) headset
+2) handheld
+What type of phone do you have?: 2
+You chose handheld
+1) finance
+2) sales
+3) engineering
+4) customer service
+What department do you work in?: 3
+You chose engineering
+What is your extension? (must be 4 digits): 2222
+What access code would you like to use when dialling in (must be 4 digits)?: 
+root@4da6e0a48600:/Prateek# cat extensions.csv 
+Prateek,Dekate,handheld,engineering,2222,1234
+```
+
