@@ -342,3 +342,23 @@ My name is john
 My home directory is /root
 My favourite colour is blue
 ```
+
+```sh
+vi positional_script.sh
+
+#!/bin/bash
+echo "My name is $1"
+echo "My home directory is $2"
+echo "My favourite colour is $3"
+echo "The 10th argument is ${10}"
+echo "The 11th argument is ${11}"
+
+./positional_script.sh a b c d e f g h i j k 
+My name is a
+My home directory is b
+My favourite colour is c
+The 10th argument is j
+The 11th argument is k
+
+```
+
