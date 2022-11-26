@@ -292,4 +292,38 @@ file1.txt  file2.txt  file3.txt  filea.txt  fileb.txt  filec.txt
 ls file[ab].txt
 filea.txt  fileb.txt
 
+ls file[abc][abc][abc].txt
+fileabc.txt
+
+ls file[a-g].txt
+filea.txt  fileb.txt  filec.txt
+
+
+ls file[0-9].txt
+file1.txt  file2.txt  file3.txt
+
 ```
+
+- Quote Removal
+
+Note: if you want to remove literal quotes
+
+```sh
+
+```
+
+- Redirection
+
+```sh
+vi hello.txt -> write Hello word! insight it.
+cat < hello.txt 
+Hello world!
+
+
+echo "this is some output" > output.txt
+ls
+hello.txt  output.txt
+cat output.txt 
+this is some output
+```
+
