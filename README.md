@@ -567,3 +567,10 @@ aa=hello
 b=goodbye
 [[ $a = $b ]] ; echo $?
 ```
+
+
+```
+./if_combine.sh 
+Files do not match
+********
+```
