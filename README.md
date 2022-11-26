@@ -673,3 +673,26 @@ root@4da6e0a48600:/Prateek# echo ${days[@]@Q}
 'Monday' 'Tuesday' 'Wednesday' 'Thursday' 'Friday' 'Saturday' 'Sunday' ''
 
 ```
+
+
+```
+touch file{001..100}.txt
+
+readarray files < <(ls /Prateek/array)
+echo ${files[@]}
+file001.txt file002.txt file003.txt file004.txt file005.txt file006.txt file007.txt file008.txt file009.txt file010.txt file011.txt file012.txt file013.txt file014.txt file015.txt file016.txt file017.txt file018.txt file019.txt file020.txt file021.txt file022.txt file023.txt file024.txt file025.txt file026.txt file027.txt file028.txt file029.txt file030.txt file031.txt file032.txt file033.txt file034.txt file035.txt file036.txt file037.txt file038.txt file039.txt file040.txt file041.txt file042.txt file043.txt file044.txt file045.txt file046.txt file047.txt file048.txt file049.txt file050.txt file051.txt file052.txt file053.txt file054.txt file055.txt file056.txt file057.txt file058.txt file059.txt file060.txt file061.txt file062.txt file063.txt file064.txt file065.txt file066.txt file067.txt file068.txt file069.txt file070.txt file071.txt file072.txt file073.txt file074.txt file075.txt file076.txt file077.txt file078.txt file079.txt file080.txt file081.txt file082.txt file083.txt file084.txt file085.txt file086.txt file087.txt file088.txt file089.txt file090.txt file091.txt file092.txt file093.txt file094.txt file095.txt file096.txt file097.txt file098.txt file099.txt file100.txt
+
+root@4da6e0a48600:/Prateek/array# echo ${!files[@]}
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99
+
+
+echo ${files[@]@Q}
+$'file001.txt\n' $'file002.txt\n' $'file003.txt\n' $'file004.txt\n' $'file005.txt\n' $'file006.txt\n' $'file007.txt\n' $'file008.txt\n' $'file009.txt\n' $'file010.txt\n' $'file011.txt\n' $'file012.txt\n' $'file013.txt\n' $'file014.txt\n' $'file015.txt\n' $'file016.txt\n' $'file017.txt\n' $'file018.txt\n' $'file019.txt\n' $'file020.txt\n' $'file021.txt\n' $'file022.txt\n' $'file023.txt\n' $'file024.txt\n' $'file025.txt\n' $'file026.txt\n' $'file027.txt\n' $'file028.txt\n' $'file029.txt\n' $'file030.txt\n' $'file031.txt\n' $'file032.txt\n' $'file033.txt\n' $'file034.txt\n' $'file035.txt\n' $'file036.txt\n' $'file037.txt\n' $'file038.txt\n' $'file039.txt\n' $'file040.txt\n' $'file041.txt\n' $'file042.txt\n' $'file043.txt\n' $'file044.txt\n' $'file045.txt\n' $'file046.txt\n' $'file047.txt\n' $'file048.txt\n' $'file049.txt\n' $'file050.txt\n' $'file051.txt\n' $'file052.txt\n' $'file053.txt\n' $'file054.txt\n' $'file055.txt\n' $'file056.txt\n' $'file057.txt\n' $'file058.txt\n' $'file059.txt\n' $'file060.txt\n' $'file061.txt\n' $'file062.txt\n' $'file063.txt\n' $'file064.txt\n' $'file065.txt\n' $'file066.txt\n' $'file067.txt\n' $'file068.txt\n' $'file069.txt\n' $'file070.txt\n' $'file071.txt\n' $'file072.txt\n' $'file073.txt\n' $'file074.txt\n' $'file075.txt\n' $'file076.txt\n' $'file077.txt\n' $'file078.txt\n' $'file079.txt\n' $'file080.txt\n' $'file081.txt\n' $'file082.txt\n' $'file083.txt\n' $'file084.txt\n' $'file085.txt\n' $'file086.txt\n' $'file087.txt\n' $'file088.txt\n' $'file089.txt\n' $'file090.txt\n' $'file091.txt\n' $'file092.txt\n' $'file093.txt\n' $'file094.txt\n' $'file095.txt\n' $'file096.txt\n' $'file097.txt\n' $'file098.txt\n' $'file099.txt\n' $'file100.txt\n'
+
+
+readarray -t files < <(ls /Prateek/array)
+root@4da6e0a48600:/Prateek/array# echo ${files[@]@Q}
+'file001.txt' 'file002.txt' 'file003.txt' 'file004.txt' 'file005.txt' 'file006.txt' 'file007.txt' 'file008.txt' 'file009.txt' 'file010.txt' 'file011.txt' 'file012.txt' 'file013.txt' 'file014.txt' 'file015.txt' 'file016.txt' 'file017.txt' 'file018.txt' 'file019.txt' 'file020.txt' 'file021.txt' 'file022.txt' 'file023.txt' 'file024.txt' 'file025.txt' 'file026.txt' 'file027.txt' 'file028.txt' 'file029.txt' 'file030.txt' 'file031.txt' 'file032.txt' 'file033.txt' 'file034.txt' 'file035.txt' 'file036.txt' 'file037.txt' 'file038.txt' 'file039.txt' 'file040.txt' 'file041.txt' 'file042.txt' 'file043.txt' 'file044.txt' 'file045.txt' 'file046.txt' 'file047.txt' 'file048.txt' 'file049.txt' 'file050.txt' 'file051.txt' 'file052.txt' 'file053.txt' 'file054.txt' 'file055.txt' 'file056.txt' 'file057.txt' 'file058.txt' 'file059.txt' 'file060.txt' 'file061.txt' 'file062.txt' 'file063.txt' 'file064.txt' 'file065.txt' 'file066.txt' 'file067.txt' 'file068.txt' 'file069.txt' 'file070.txt' 'file071.txt' 'file072.txt' 'file073.txt' 'file074.txt' 'file075.txt' 'file076.txt' 'file077.txt' 'file078.txt' 'file079.txt' 'file080.txt' 'file081.txt' 'file082.txt' 'file083.txt' 'file084.txt' 'file085.txt' 'file086.txt' 'file087.txt' 'file088.txt' 'file089.txt' 'file090.txt' 'file091.txt' 'file092.txt' 'file093.txt' 'file094.txt' 'file095.txt' 'file096.txt' 'file097.txt' 'file098.txt' 'file099.txt' 'file100.txt'
+
+```
+
