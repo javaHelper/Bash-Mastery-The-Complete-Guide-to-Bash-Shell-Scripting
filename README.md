@@ -198,3 +198,7 @@ month0 month1 month2 month3 month4 month5 month6 month7 month8 month9 month10 mo
 root@4da6e0a48600:/Prateek# 
 ```
 
+
+# 3. How bash processes command line 
+
+
