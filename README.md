@@ -480,3 +480,7 @@ I am from Pune
 root@4da6e0a48600:/Prateek# 
 ```
 
+```
+cat extensions.csv  
+John,Doe,0001,1234
+```
