@@ -519,4 +519,24 @@ What access code would you like to use when dialling in (must be 4 digits)?:
 root@4da6e0a48600:/Prateek# cat extensions.csv 
 Prateek,Dekate,handheld,engineering,2222,1234
 ```
+------
+
+# 4. Logic
+
+```sh
+root@4da6e0a48600:/Prateek# echo 123 && echo 456
+123
+456
+
+root@4da6e0a48600:/Prateek# echo 123 || echo 456
+123
+
+root@4da6e0a48600:/Prateek# ls some_directory && echo 456
+ls: cannot access 'some_directory': No such file or directory
+
+ls some_directory ||  echo 456
+ls: cannot access 'some_directory': No such file or directory
+456
+
+```
 
