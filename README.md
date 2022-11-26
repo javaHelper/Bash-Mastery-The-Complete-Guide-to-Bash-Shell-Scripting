@@ -454,3 +454,11 @@ hello
 root@4da6e0a48600:/Prateek# echo $input2
 goodbye
 ```
+
+```sh
+./read.sh 
+Prateek 33 London
+My name is Prateek
+I am 33
+I am from London
+```
