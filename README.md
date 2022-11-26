@@ -201,4 +201,8 @@ root@4da6e0a48600:/Prateek#
 
 # 3. How bash processes command line 
 
-
+```sh
+root@4da6e0a48600:/Prateek# ./quoting.sh 
+john & jane
+root@4da6e0a48600:/Prateek# 
+```
