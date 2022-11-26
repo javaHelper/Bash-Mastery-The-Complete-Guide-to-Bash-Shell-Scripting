@@ -158,3 +158,20 @@ root@4da6e0a48600:/Prateek# ./arithmatic_script.sh
 2
 root@4da6e0a48600:/Prateek# 
 ```
+
+
+- Dealing with decimal numbers
+
+```sh
+root@4da6e0a48600:/Prateek# bc
+bc 1.07.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2017 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'. 
+2+2
+4
+8*6
+48
+quit 
+root@4da6e0a48600:/Prateek#
+```
