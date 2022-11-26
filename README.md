@@ -419,3 +419,11 @@ drwxr-xr-x 1 root root 4096 Nov 22 07:03  ..
 -rw-r--r-- 1 root root    0 Nov 26 07:22 'monthly report'
 -rwxr-xr-x 1 root root   24 Nov 26 07:22  special3.sh
 ```
+
+```sh
+chmod +x spcial4.sh 
+./spcial4.sh 1 2 3
+1,2,3
+
+```
+
