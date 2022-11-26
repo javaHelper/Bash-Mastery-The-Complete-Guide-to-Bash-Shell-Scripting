@@ -206,3 +206,23 @@ root@4da6e0a48600:/Prateek# ./quoting.sh
 john & jane
 root@4da6e0a48600:/Prateek# 
 ```
+
+- word splitting 
+
+```sh
+root@4da6e0a48600:/Prateek# echo "${IFS@Q}"
+$' \t\n'
+root@4da6e0a48600:/Prateek# 
+
+root@4da6e0a48600:/Prateek# mkdir word_splitting    
+root@4da6e0a48600:/Prateek# cd word_splitting
+root@4da6e0a48600:/Prateek/word_splitting# numbers="1 2 3 4 5"
+root@4da6e0a48600:/Prateek/word_splitting# touch $numbers
+root@4da6e0a48600:/Prateek/word_splitting# ls
+1  2  3  4  5
+root@4da6e0a48600:/Prateek/word_splitting# rm {1..5}
+root@4da6e0a48600:/Prateek/word_splitting# ls
+root@4da6e0a48600:/Prateek/word_splitting# 
+
+
+```
