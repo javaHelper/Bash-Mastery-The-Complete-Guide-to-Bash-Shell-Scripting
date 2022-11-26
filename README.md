@@ -225,4 +225,8 @@ root@4da6e0a48600:/Prateek/word_splitting# ls
 root@4da6e0a48600:/Prateek/word_splitting# 
 
 
+root@4da6e0a48600:/Prateek/word_splitting# touch "$numbers"
+root@4da6e0a48600:/Prateek/word_splitting# ls
+'1 2 3 4 5'
+root@4da6e0a48600:/Prateek/word_splitting# 
 ```
