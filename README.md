@@ -132,4 +132,12 @@ root@4da6e0a48600:/#
 HELLO , the right time now is 05:11:41
 26-11-2022_05-43-41
 
+
+root@4da6e0a48600:/Prateek# ./command_substitution_script.sh 
+Hello, 
+I will now backup your home directory, /root
+You're running your script from /Prateek
+Therefore, I will save the backup in /Prateek
+root@4da6e0a48600:/Prateek# 
+
 ```
