@@ -607,3 +607,14 @@ Please enter a number: 4444
 you've entered no. more than three digits
 root@4da6e0a48600:/Prateek# 
 ```
+
+
+```
+./city_checker.sh 
+1) Tokyo	   4) Moscow	     7) New York      10) Johannesburg	13) Abu Dhabi	  16) Berlin
+2) London	   5) Dubai	     8) Paris	      11) Istanbul	14) Pune	  17) Karachi
+3) Los Angeles	   6) Manchester     9) Bangalore     12) Milan		15) Nairobi	  18) Madrid
+#? 1
+Tokyo is in Japan
+
+```
