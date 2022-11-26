@@ -174,4 +174,11 @@ For details type `warranty'.
 48
 quit 
 root@4da6e0a48600:/Prateek#
+
+
+root@4da6e0a48600:/Prateek# ./decimal_numbers.sh 
+2
+2.50
+2.5000000000
+root@4da6e0a48600:/Prateek# 
 ```
