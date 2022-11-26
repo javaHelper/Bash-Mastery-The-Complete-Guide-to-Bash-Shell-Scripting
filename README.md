@@ -436,3 +436,12 @@ root@4da6e0a48600:/Prateek# ./calculator2.sh 1*2*3*4
 24
 ```
 
+```
+root@4da6e0a48600:/Prateek# echo $REPLY
+
+root@4da6e0a48600:/Prateek# read      
+hello
+root@4da6e0a48600:/Prateek# echo $REPLY
+hello
+root@4da6e0a48600:/Prateek# 
+```
