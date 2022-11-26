@@ -57,3 +57,33 @@ export PATH=$PATH:$CONFLUENT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:/Users/pr
 echo $PATH
 /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/prats/confluent-7.0.1/bin:/Users/prats/Documents/Software/apache-maven-3.8.4/bin:/Users/prats/Documents/Software/gradle-7.3.3/bin:/Users/prats/Documents/Software/mongodb-macos-x86_64-5.0.5/bin:/Users/prats/Documents/Software/kafka_2.12-3.3.1/bin:/Library/PostgreSQL/11/bin:/Users/prats/Documents/Prateek/Bash-Mastery-The-Complete-Guide-to-Bash-Shell-Scripting/scripts
 ```
+
+# 2. Variable and Shell Expression
+
+```sh
+./variable_practice.sh 
+Hello Sarah
+Hello + Sarah
+============
+Dear John
+The board I would like to thank you for the execellent work that you've done
+Keep the good work John
+Best Wishes,
+Prateel, CEO
+```
+
+- Shell Variable
+
+```sh
+echo "Hello $USER"
+Hello prateekashtikar
+
+echo HOSTTYPE
+HOSTTYPE
+
+echo $PS1
+%n@%m %1~ %# 
+
+PS1="$: "
+$: source ~/.bash_sessions 
+```
