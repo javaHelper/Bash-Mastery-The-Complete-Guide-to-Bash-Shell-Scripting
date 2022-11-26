@@ -484,3 +484,19 @@ root@4da6e0a48600:/Prateek#
 cat extensions.csv  
 John,Doe,0001,1234
 ```
+
+
+```
+chmod +x select.sh 
+./select.sh 
+1) mon
+2) tue
+3) wed
+4) thu
+5) fri
+6) sat
+7) sau
+#? 3
+# The day of the week is wed
+```
+
