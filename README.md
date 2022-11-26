@@ -396,4 +396,14 @@ chmod 744 special.sh
 -rw-r--r-- 1 root root     0 Nov 26 07:10 1
 -rwxr-xr-x 1 root root    21 Nov 26 07:11 special2.sh
 
+/special2.sh "daily feedback" "monthly report"
+root@4da6e0a48600:/Prateek# ls -la
+total 20
+drwxr-xr-x 4 root root 4096 Nov 26 07:15 .
+drwxr-xr-x 1 root root 4096 Nov 22 07:03 ..
+-rw-r--r-- 1 root root    0 Nov 26 07:15 daily
+-rw-r--r-- 1 root root    0 Nov 26 07:15 feedback
+-rw-r--r-- 1 root root    0 Nov 26 07:15 monthly
+-rw-r--r-- 1 root root    0 Nov 26 07:15 report
+-rwxr-xr-x 1 root root   22 Nov 26 07:14 special2.sh
 ```
