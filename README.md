@@ -182,3 +182,19 @@ root@4da6e0a48600:/Prateek# ./decimal_numbers.sh
 2.5000000000
 root@4da6e0a48600:/Prateek# 
 ```
+
+- brace expansion
+
+```sh
+root@4da6e0a48600:/Prateek# ./brace_expansion.sh 
+a 19 z barry 42
+jan feb mar apr may jun
+1 2 3 4 5 6 7 8 9 10
+10 9 8 7 6 5 4 3 2 1
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+1 4 7 10 13 16 19 22 25 28 31 34 37 40 43 46 49 52 55 58 61 64 67 70 73 76 79 82 85 88 91 94 97 100
+x1 x2 x3 x4 x5 x6 x7 x8 x9 x10
+month0 month1 month2 month3 month4 month5 month6 month7 month8 month9 month10 month11 month12
+root@4da6e0a48600:/Prateek# 
+```
+
