@@ -372,5 +372,20 @@ My favourite colour is c
 The 10th argument is 
 The 11th argument is a1
 4
+```
+
+```sh
+vi special.sh
+chmod 744 special.sh 
+
+./special.sh 1 2 3
+1 2 3
+
+./special.sh 1 2 3 4
+1 2 3 4
+
+./special.sh 1 2 3 4 5
+1 2 3 4 5
 
 ```
+
