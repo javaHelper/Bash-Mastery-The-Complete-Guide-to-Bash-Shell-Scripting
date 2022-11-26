@@ -237,4 +237,45 @@ root@4da6e0a48600:/Prateek/word_splitting# touch $numbers
 root@4da6e0a48600:/Prateek/word_splitting# ls
 1,2,3,4,5
 root@4da6e0a48600:/Prateek/word_splitting#
+
+
+root@4da6e0a48600:/Prateek/word_splitting# IFS=","
+root@4da6e0a48600:/Prateek/word_splitting# touch $numbers
+root@4da6e0a48600:/Prateek/word_splitting# ls
+1  1,2,3,4,5  2  3  4  5
+root@4da6e0a48600:/Prateek/word_splitting#
+root@4da6e0a48600:/Prateek/word_splitting# rm {1..5}
+root@4da6e0a48600:/Prateek/word_splitting# rm 1,2,3,4,5 
+```
+
+- globbing 
+
+```sh
+root@4da6e0a48600:/Prateek/word_splitting# ls           
+root@4da6e0a48600:/Prateek/word_splitting# touch file.txt
+root@4da6e0a48600:/Prateek/word_splitting# touch file123.txt
+root@4da6e0a48600:/Prateek/word_splitting# touch file{1..3}.txt
+root@4da6e0a48600:/Prateek/word_splitting# ls -l
+total 0
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file1.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file123.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file2.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file3.txt
+root@4da6e0a48600:/Prateek/word_splitting# touch file{a..c}.txt
+root@4da6e0a48600:/Prateek/word_splitting# ls -l
+total 0
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file1.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file123.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file2.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:14 file3.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:15 filea.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:15 fileb.txt
+-rw-r--r-- 1 root root 0 Nov 26 06:15 filec.txt
+root@4da6e0a48600:/Prateek/word_splitting# 
+root@4da6e0a48600:/Prateek/word_splitting# touch report{1..3}.pdf 
+root@4da6e0a48600:/Prateek/word_splitting# ls
+file.txt  file1.txt  file123.txt  file2.txt  file3.txt  filea.txt  fileb.txt  filec.txt  report1.pdf  report2.pdf  report3.pdf
+root@4da6e0a48600:/Prateek/word_splitting# 
 ```
