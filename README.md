@@ -590,3 +590,20 @@ Please enter a number: 4444
 you've entered no. more than three digits
 root@4da6e0a48600:/Prateek# 
 ```
+
+
+```sh
+root@4da6e0a48600:/Prateek# ./case_script.sh 
+Please enter a number: 1
+you've entered a single digit number
+root@4da6e0a48600:/Prateek# ./case_script.sh 
+Please enter a number: 12
+you've entered a two digit number
+root@4da6e0a48600:/Prateek# ./case_script.sh 
+Please enter a number: 123
+you've entered a three digit number
+root@4da6e0a48600:/Prateek# ./case_script.sh 
+Please enter a number: 4444
+you've entered no. more than three digits
+root@4da6e0a48600:/Prateek# 
+```
