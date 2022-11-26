@@ -470,3 +470,13 @@ Input your first name : Jane
 Input your age : 30
 Input the town you are from: Chicago
 ```
+
+```
+./read3.sh 
+Input your first name : Input your age : Input the town you are from: 
+My name is Jane
+I am 22
+I am from Pune
+root@4da6e0a48600:/Prateek# 
+```
+
