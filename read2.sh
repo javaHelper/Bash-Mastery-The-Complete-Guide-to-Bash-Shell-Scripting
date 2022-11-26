@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Input your first name : " name
+read -p "Input your age : " age
+read -p "Input the town you are from: " town
