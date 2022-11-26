@@ -362,3 +362,15 @@ The 11th argument is k
 
 ```
 
+```sh
+chmod 755 new_positional_script.sh 
+
+./new_positional_script.sh a b c d
+My name is a
+My home directory is b
+My favourite colour is c
+The 10th argument is 
+The 11th argument is a1
+4
+
+```
