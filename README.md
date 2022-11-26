@@ -87,3 +87,40 @@ echo $PS1
 PS1="$: "
 $: source ~/.bash_sessions 
 ```
+
+- Parameter Expansion Trics
+
+```sh
+root@4da6e0a48600:/# name=PrAteEk
+root@4da6e0a48600:/# echo $name
+PrAteEk
+root@4da6e0a48600:/# echo ${name}
+PrAteEk
+root@4da6e0a48600:/# echo ${name,}
+prAteEk
+root@4da6e0a48600:/# echo ${name,,}
+prateek
+root@4da6e0a48600:/# echo ${name^}
+PrAteEk
+root@4da6e0a48600:/# echo ${name^^}
+PRATEEK
+root@4da6e0a48600:/# echo ${#name}
+7
+root@4da6e0a48600:/#
+
+
+root@4da6e0a48600:/# numbers=0123456789
+root@4da6e0a48600:/# echo ${numbers:0:7}
+0123456
+root@4da6e0a48600:/# echo ${numbers:1:5}
+12345
+root@4da6e0a48600:/# echo ${numbers:3}
+3456789
+root@4da6e0a48600:/# echo ${numbers: -3,2}
+23456789
+root@4da6e0a48600:/# echo ${numbers: -3:2}
+78
+root@4da6e0a48600:/# echo ${numbers: -3}
+789
+root@4da6e0a48600:/# 
+```
