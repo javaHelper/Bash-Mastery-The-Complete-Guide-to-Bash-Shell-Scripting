@@ -327,3 +327,18 @@ cat output.txt
 this is some output
 ```
 
+# 3. Requesting User inputs
+
+```sh
+vi positional_script.sh
+#!/bin/bash
+echo "My name is $1"
+echo "My home directory is $2"
+echo "My favourite colour is $3"
+
+chmod 744 positional_script.sh
+./positional_script.sh john $HOME blue
+My name is john
+My home directory is /root
+My favourite colour is blue
+```
