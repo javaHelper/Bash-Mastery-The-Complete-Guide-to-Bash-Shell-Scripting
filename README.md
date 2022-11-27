@@ -697,6 +697,23 @@ root@4da6e0a48600:/Prateek/array# echo ${files[@]@Q}
 ```
 
 
+```
+root@4da6e0a48600:/Prateek/array# ./file_creator.sh 
+root@4da6e0a48600:/Prateek/array# la -l
+total 8
+-rwxr-xr-x 1 root root 97 Nov 27 16:13 file_creator.sh
+-rw-r--r-- 1 root root 60 Nov 27 16:14 files.txt
+-rw-r--r-- 1 root root  0 Nov 27 16:14 report1.txt
+-rw-r--r-- 1 root root  0 Nov 27 16:14 report2.txt
+-rw-r--r-- 1 root root  0 Nov 27 16:14 report3.txt
+-rw-r--r-- 1 root root  0 Nov 27 16:14 report4.txt
+-rw-r--r-- 1 root root  0 Nov 27 16:14 report5.txt
+root@4da6e0a48600:/Prateek/array# 
+```
+
+
+
+
 ```sh
 ./array_project.sh 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
