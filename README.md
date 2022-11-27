@@ -709,6 +709,15 @@ total 8
 -rw-r--r-- 1 root root  0 Nov 27 16:14 report4.txt
 -rw-r--r-- 1 root root  0 Nov 27 16:14 report5.txt
 root@4da6e0a48600:/Prateek/array# 
+
+
+root@4da6e0a48600:/Prateek/array# ./file_creator.sh 
+report1.txt already exists
+report2.txt already exists
+report3.txt already exists
+report4.txt already exists
+report5.txt already exists
+root@4da6e0a48600:/Prateek/array#
 ```
 
 
